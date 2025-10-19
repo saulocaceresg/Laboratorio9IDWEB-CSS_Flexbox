@@ -22,7 +22,7 @@ nav ul li a {
 /* BARRA LATERAL */
 aside {
     border: 1px solid gray;
-    background-color: rgb(19, 19, 68);
+    background-color: #131344;
     color: white;
     padding: 0 10px;
     /* display: inline-flex; */
@@ -64,4 +64,71 @@ aside ul li span {
 main {
     display: grid;
     grid-template-columns: 20% auto;
+}
+
+/* ----- CONTENIDO PRINCIPAL ----- */
+/* CEBECERA */
+.principal {
+    padding: 10px 35px;
+    background-color: #dde0e2;
+}
+.principal header {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    gap: 80%;
+}
+.principal header h2 {
+    font-size: 25px;
+}
+.principal header .menu {
+    font-size: 30px;
+}
+
+/* SECCIÓN DATOS */
+.principal .datos {
+    display: inline-flex;
+    flex: 1;
+    width: 100%;
+    margin: auto;
+    gap: 50px;
+}
+.principal .datos div.tarjeta {
+    border: 1px solid gray;
+    width: 25%;
+    margin: auto;
+    padding: 5px 10px 25px 10px;
+    /* box-sizing: border-box; */
+    /* display: inline-flex; */
+}
+.principal .datos .tarjeta .titulotarj {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 90%;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    gap: 30%;
+}
+.principal .datos .tarjeta .titulotarj .bi {
+    font-size: 25px;
+}
+.principal .datos .tarjeta p {
+    font-size: 50px;
+    margin: 0 0 0 22px;
+    padding: 0;
+    text-align: left;
+}
+/* Colores diferenciados */
+.principal .datos .azul {
+    background-color: #131344;
+    color: white;
+}
+.principal .datos .blanco {
+    background-color: white;
+}
+.principal .datos .blanco i {
+    color: rgb(253, 193, 40);
 }
