@@ -4,11 +4,13 @@ body {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #dad7d7;
 }
 header, nav, footer {
     padding: 16px 0;
     text-align: center;
     margin: 0;
+    width: 100%;
 }
 nav {
     background-color: beige;
@@ -28,16 +30,29 @@ nav ul li a {
 }
 main {
     display: flex;
-    gap: 16px;
+    gap: 1px;
+    margin: 0 10px;
+    height: 100%;
 }
 
 article {
-    border: 2px solid gray;
     padding: 10px;
     margin: 10px;
     flex: 3;
-
+    height: 40vh;
+    background-color: rgb(236, 236, 201);
 }
 aside {
     flex: 1;
+    padding: 16px;
+    margin: 10px;
+    height: 40vh;
+    background-color: rgb(235, 235, 191);
+}
+footer {
+    position: relative;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
