@@ -3,6 +3,7 @@ body {
     margin: 0;
     text-align: center;
     min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 nav { /*Para el menú principal*/
     background-color: beige;
@@ -17,4 +18,50 @@ nav ul li a {
     text-decoration: none;
 }
 
-/*  */
+/*==================== SECCIÓN DASHBOARD =======================*/
+/* BARRA LATERAL */
+aside {
+    border: 1px solid gray;
+    background-color: rgb(19, 19, 68);
+    color: white;
+    padding: 0 10px;
+    /* display: inline-flex; */
+}
+aside .bi-person-circle {
+    font-size: 150px;
+}
+aside .datosprincipales p#correo {
+    margin: 0;
+}
+aside .datosprincipales p#usuario {
+    margin-bottom: 2px;
+}
+aside p#usuario {
+    font-size: 30px;
+}
+aside p#correo {
+    font-size: 20px;
+}
+aside ul {
+    list-style: none;
+    /* float: left; */
+    text-align: left;
+    padding: 0 35px;
+}
+aside ul li p {
+    padding: 0;
+    margin: 20px 0 20px 30px;
+    /* margin-left: 30px; */
+}
+aside ul li span {
+    display: flex;
+    align-items: center;
+}
+
+.principal {
+    border: 1px solid gray;
+}
+main {
+    display: grid;
+    grid-template-columns: 20% auto;
+}
